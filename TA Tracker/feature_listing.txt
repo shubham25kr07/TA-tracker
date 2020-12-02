@@ -1,0 +1,90 @@
+BASIC  
+------
+- add users
+- login/signup
+- CRUD course
+- join course
+
+FEATURES
+---------
+
+- CRD assignment
+- assign TA
+- import submissions  ----integration on going
+- upload rubricks     ----integration on going
+
+
+--------------------------------------------------------
+
+TODO
+-----
+- TA allocated to submissions   ----  Equalize work Load
+- upload marks                  ----  Integration on going   
+- approve rubricks
+- approve marks          
+- update deadline
+
+- Raise Query
+- Resolve Query
+- Comments
+- Freeze Marks
+
+- Monitor TA performances 
+- prepare graphs and charts 
+- rating based on performance
+- export performance
+
+===========================================================================
+
+
+DIVISION OF WORK    for Time being
+----------------------
+Current Work
+---------
+Aayush T & Ayush V           ---        Professor Routes and Submission
+Shubham & Samarth            ---        handle TA routes
+Amritansh                    ---        Frontend Pages
+
+Next Set
+---------
+Aayush T                     ---        Student Routes
+Samarth & Shubham            ---        Raise Resolve Query
+Ayush                        ---        Approvals/ decision of professors, Freeze Marks, Deadline Related
+Amritansh                    ---        Frontend Pages + Performances graphs and measure Related Work
+======================================================================================================
+
+--------------------------------------  ================ -----------------------------------------------------
+                                        | TODO-- NOV-4 | 
+                                        ================
+
+1. FRONTEND- 14/15 left to complete
+
+2. Professor_Route--
+                  -- rateTA
+                  -- Freeze marks  <-------------------------------|<--|-<--TAconsent---<
+                                                                                        |
+3. TA_ROUTES -----                                                                      |
+        - Gave all marks button ====> req for freeze/approve marks and deadline match--->
+        - TA performance score Params::-  =========> Nov4-- updated assigned table to hold some measures
+                        professorRating,
+                        studentRating,
+                        deadline skips, 
+                        MarkUploaded, ( within deadline ) if not put 1 there
+                        MarkQuery1,  -----as req
+                        MarkResolve1, -----as req
+                        MarkQuery2,   -----as req
+                        marks,       ------as req
+                    --- need to be stored for each assignment in TABLE              
+        
+        - fetch all performance data                                                                                                         |  
+
+4. StudentRoute -- rateTA
+                -- see marks only when freezed, see rubricks when approved ========= DEPENDENT on OTHERS WORK
+                -- initiate query route for student
+
+5. Collective work ( STUDENT + TA + PROFESSOR )_routes --All of us needed
+--------------------------------------------
+QUERY ROUTES NEEDED for -- student raise -1
+                        -- TA resolve
+                        -- student raise -2
+                        -- professor resolve
